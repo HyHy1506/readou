@@ -1,0 +1,18 @@
+.formLogin fieldset{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.inputLogin {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    color: black;
+}
+#notiWrongLogin {
+    display: none;
+    color: red;
+}

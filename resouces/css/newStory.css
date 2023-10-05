@@ -1,0 +1,11 @@
+.partNewStory {
+    display: flex;
+    flex-direction: column;
+}
+
+#urlImageNewStory,#titleNewStory{
+
+    margin-bottom:0;
+    
+  
+  }

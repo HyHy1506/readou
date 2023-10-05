@@ -1,0 +1,114 @@
+.chapterNavigation{
+    color: black;
+    width: 100%;
+
+}
+.navi_story{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.comeStory{
+    margin: 0 10px;
+    background-color: rgb(255, 254, 244);
+    width: 200px;
+    height: 40px;
+text-align: left;
+border-radius: 5px;
+padding: 0 10px;
+font-weight: 600;
+font-size: 17px;
+word-break: break-all;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.comeStory p{
+    line-height: 40px;
+}
+.showTextLi{
+    background-color: rgb(255, 254, 244);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 0 5px 5px  0;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+
+
+}
+.showTextLi p{
+    display: inline-block;
+    width: 200px;
+    word-break: keep-all;
+    overflow: hidden;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 10px;
+
+}
+.ul_navi_chaps{
+  
+    color: white;
+    z-index: 100;
+    position: absolute;
+    max-height: 500px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+.ul_navi_chaps li{
+    width: 250px;
+
+    border-top:1px solid grey ;
+    color: black;
+    padding: 10px 20px;
+    list-style: none;
+   word-break: break-all;
+   overflow: hidden;
+   line-height: 30px;
+   height:45px   ;
+   background-color: rgb(255, 254, 244);
+}
+#liChosen{
+    color: salmon;
+   
+}
+.ul_navi_chaps li:hover{
+    text-decoration: underline;
+    text-decoration-color: salmon;
+}
+.coverImageChap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ .imageChap img {
+     object-fit: cover;
+     border-radius: 20px;
+ }
+ .btnNextChap{
+    margin: 20px 0 0 0  ;
+    display: flex;
+    justify-content: center;
+}
+.btnNextChap button{
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 254, 244);
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (max-width:800px) {
+    .showTextLi{
+        width: 170px;
+    }
+    .showTextLi p{
+        width: 80%;
+    }
+}

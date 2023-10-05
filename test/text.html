@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7bdff41b0d.js"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+    .coverLoader{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.loader{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 5px solid rgb(208, 208, 208);
+  border-top-color: salmon;
+animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.hoo{
+  position: relative;
+}
+.kk{
+  height: 1000px;
+  background-color: aqua;
+}
+</style>
+  </head>
+
+  <body>
+    
+    <h3>hhhhhhhhhhhhhhhhhhhh <br>hhhhhhhhhhhhhhh</h3>
+    <div class="hoo">
+      <img src=
+  "https://media.geeksforgeeks.org/wp-content/uploads/20230723195619/GfG-Image.png"
+          alt="GeeksforGeeks logo" />
+          <div class="coverLoader">
+            <div class="loader"></div>
+          </div>
+    </div>
+    <div class="kk"></div>
+    <script>
+// $(window).on('load',()=>{
+//   $(".coverLoader").fadeOut(1000)
+//   $(".hoo").fadeIn(1000)
+// })
+// $(window).on('load',()=>{
+//  if(document.readyState=="complete")
+//  {
+//   $(".coverLoader").hide()
+//   $(".hoo").show()
+//  }else
+//  if(document.readyState=="interactive")
+//  {
+//   $(".coverLoader").show()
+//   $(".hoo").show()
+//  }else{
+//   $(".coverLoader").show()
+//   $(".hoo").hide()
+//  }
+// })
+            document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+              document.querySelector(".coverLoader").style.visibility = "visible";
+
+            } else{
+              document.querySelector(".coverLoader").style.display = "none";
+              
+            }
+        };
+
+    </script>
+  </body>
+
+</html>

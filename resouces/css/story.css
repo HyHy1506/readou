@@ -1,0 +1,98 @@
+.partStory{
+    background-color: rgb(255, 254, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.storyHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    height: 350px;
+}
+
+.imgStory{
+    
+    width: 200px;
+    box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.459);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titleAndBtnStory{
+    margin-left: 30px;
+    width: 50%;
+}
+.titleAndBtnStory h1{
+    
+    max-height: 240px;
+    word-break:  keep-all;
+    overflow: hidden;
+    line-height: 42px;
+    
+}
+.btnStoryReadStart{
+   
+    border: none;
+    background-color: rgb(200, 200, 200);
+    padding: 15px 20px;
+    border-radius: 20px;
+   margin-top: 20px;
+}
+.btnStoryReadStart:hover{
+    background-color: rgb(165, 165, 165);
+   
+    
+}
+.descriptionStory{
+    width: 70%;
+    text-align: center;
+}
+.descriptionStory p{
+    line-height: 25px;
+}
+.showChapOfStory{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.oneChap{
+    border-bottom: 1px solid gray;
+    width: 70%;
+    padding-bottom: 10px ;
+    margin-bottom: 10px;
+}
+
+.oneChap p{
+    height: 25px;
+    line-height: 25px;
+    word-break: keep-all;
+    overflow: hidden;
+}
+@media (max-width:800px) {
+    .storyHead{
+        
+        height: 200px;
+    }
+    .imgStory {
+
+        height: 200px;
+    width: 130px;
+    }
+    .titleAndBtnStory{
+        margin-left: 10px;
+        width: 50%;
+    }
+    .titleAndBtnStory h1{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

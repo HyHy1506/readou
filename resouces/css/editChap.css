@@ -1,0 +1,4 @@
+.partEditChap {
+    display: flex;
+    flex-direction: column;
+}

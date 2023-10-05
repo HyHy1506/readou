@@ -1,0 +1,59 @@
+.partMyStory{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+justify-content: space-between;
+border-bottom: 1px solid     gray;
+padding: 5px;
+}
+.infoOneMystory{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+justify-content: flex-start;
+}
+.infoOneMystory h3{
+    margin: 5px 10px;
+  width: 70%;
+    line-height: 30px;
+    max-height: 60px;
+    word-break: keep-all;
+    overflow: hidden;
+}
+.imgMystory{
+    border: 1px solid gray;
+    background-image: url(image/top.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 95.8px;
+    height: 150px;
+    border-radius: 3px;
+}
+.moreOneMyStory{
+    position: relative;
+}
+.moreOneMyStory ul{
+    width: 130px;
+    position: absolute;
+    right: 0;
+list-style: none;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.moreOneMyStory ul li{
+    background-color: rgb(255, 254, 244);
+
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 5px 7px;
+}
+.moreOneMyStory ul li:hover{
+   background-color: rgba(139, 140, 139, 0.274);
+   
+}
